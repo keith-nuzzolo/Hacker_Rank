@@ -1,0 +1,23 @@
+'''
+The first line of input contains a single integer P,
+(1 ≤ P ≤ 1000), which is the number of data sets that follow.
+Each data set should be processed identically and independently.
+Each data set consists of a single line of input.
+It contains the data set number, K,
+followed by 20 non-negative unique integers separated by a single space.
+The 20 integers represent the height (in millimeters)
+of each student in the class.
+
+
+One student would be selected to be the first person in line.
+ Then, another student is selected and would find the first person in the line that is taller than him, and stand in front of that person, thereby causing all the students behind him to step back to make room. If there is no student that is taller, then he would stand at the end of the line. This process continues, one student at-a-time, until all the students are in line, at which point the students will be lined up in height order.
+'''
+
+def steps(heights):
+    ''' takes the list of heights and returns how many steps must be taken
+    to order it'''
+    steps = 0
+    sorted_heights = sorted(heights)
+    if sorted_heights =! heights:
+        first_to_sort = heights[1]
+        

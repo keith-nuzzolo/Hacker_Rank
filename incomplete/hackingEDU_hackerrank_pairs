@@ -1,0 +1,13 @@
+def count(n, k, numbers):
+    ''' takes numbers and list of numbers to parse through and returns the
+    numbers with difference K'''
+    num = 0
+    for i in range(0,n + 1):
+        for x in numbers[i:n + 1]:
+            if abs(numbers[i]- x) == k:
+                num += 1
+    return num
+
+number = [int(x) for x in input().split()]
+_set =[int(x) for x in input().split()]
+print(count(number[0], number[1], _set))
