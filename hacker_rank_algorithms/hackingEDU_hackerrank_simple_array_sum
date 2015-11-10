@@ -1,0 +1,7 @@
+def add(l:list):
+    ''' adds elements in list and returns answer
+    '''
+    return sum(l)
+
+total = int(input())
+print(add([int(x) for x in input().split()]))
