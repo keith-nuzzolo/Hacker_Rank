@@ -6,10 +6,5 @@ SAMPLE INPUTS:
 2
 3
 '''
-def sums(a, b):
-    ''' returns sum of inputs
-    '''
-    return a + b
-num1 = int(input())
-num2 = int(input())
-print (sums(num1, num2))
+num1, num2 = int(input()), int(input())
+print (sum([num1, num2]))
